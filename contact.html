@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Serena(Shuhang) Fan|Contactpage</title>
+    <link rel="stylesheet" href="CSS/headerstyle.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body >
+    <header>
+        <nav class="sub-nav">
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="cv.html">Resume</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-form">
+        <form>
+            <div>
+                <h2>Get in touch</h2>
+                <p style="line-height:1.5">
+                    <font size="+1">
+                        Send me a message using the form below, and I'll get back to you as soon as possible.
+                </p>
+            </div>
+            <section>
+                <div class="g-1">
+                    <label for="firstname">First Name*</label>
+                    <input class="form-field font" type="text" name="firstname" id="firstname" placeholder="First Name"
+                        required>
+                </div>
+                <div class="g-1">
+                    <label for="lastname">Last Name</label>
+                    <input class="form-field font" type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="g-1">
+                    <label for="email">Email*</label>
+                    <input class="form-field font" type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="g-1">
+                    <label for="phone">Contact No.</label>
+                    <input class="form-field font" type="tel" name="phone" id="phone" placeholder="Contact No.">
+                </div>
+                <div class="g-1">
+                    <label for="subject">Subject*</label>
+                    <input class="form-field font" type="text" id="subject" name="subject" placeholder="Subject"
+                        required><br>
+                </div>
+                <div class="g-1">
+                    <label for="comments">Comments*</label>
+                    <textarea class="form-field font" rows="8" cols="30" name="comments" id="comments"
+                        placeholder="Your message..." required></textarea>
+                </div>
+            </section>
+            <section class="g-1">
+                <input class="form-btn font" type="submit" value="SUBMIT" onclick="mySubmit()">
+            </section>
+            <script>
+                function mySubmit() {
+
+                    let firstName = document.getElementById("firstname").value;
+                    let email = document.getElementById("email").value;
+                    let subject = document.getElementById("subject").value;
+                    let comments = document.getElementById("comments").value;
+                    if (firstName == "") {
+                        alert("Please fill out first name field")
+                    }
+                    else if (email == "" || !email.includes("@")) {
+                        alert("Please input valid email")
+                    }
+                    else if (subject == "") {
+                        alert("Please fill out first subject field")
+                    }
+                    else if (comments == "") {
+                        alert("Please fill out comments field")
+                    }
+                    else if (firstName != "" && email != "" && email.includes("@") && subject != "" && comments != "") {
+                        alert("Your message is submitted!")
+                    }
+                }
+            </script>
+
+
+
+</body>
+
+</html>
