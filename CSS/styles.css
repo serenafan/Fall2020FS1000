@@ -32,14 +32,14 @@
 
 .form-field
 {
-    background-color:  #f2f2f2;
+    background-color: white;
     padding-top:  1em;   
     padding-bottom: 1em;
     margin-top: 0.3em;
     margin-bottom: 1em;
     width: 100% ;
     letter-spacing: 0.075em;
-    border:0px;
+    border:1.5px solid #22A39F;;
     font-size: 18px;
 }
 
@@ -136,7 +136,7 @@ h4
 
 .backgroundImg
 {
-    background-image:url('../background.jpg');
+    background-image:url('../Image/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -207,7 +207,7 @@ h1
 
 .backgroundcolor
 {
-    background-color: #f4ecd1;
+    background-color: #fcf9f1;
 
 }
 
@@ -259,4 +259,34 @@ table
 }
 
 
+.github:hover 
+{
+    width:25px;
+    height:25px;
 
+}
+
+.linkedIn:hover
+{
+    width:25px;
+    height:25px;
+
+}
+
+.chat
+{
+    color:#22A39F;
+    text-decoration:none;
+
+}
+.chat:hover
+{
+    text-decoration:underline overline wavy blue;
+
+}
+
+.jobtitle
+{
+    color:#22A39F;
+
+}
