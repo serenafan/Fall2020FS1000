@@ -6,6 +6,7 @@
 .contact-form
 {
     text-align: center;
+    background-color: #fcf9f1;
 }
 
 .contact-form form
@@ -289,4 +290,19 @@ table
 {
     color:#22A39F;
 
+}
+
+.footertext
+{
+    font-size: 15px;
+    line-height: 25px;
+    color: #9eada6;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#resume
+{
+    height:1900px;
 }
